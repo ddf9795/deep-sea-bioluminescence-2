@@ -177,7 +177,7 @@ tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 50, 0, 0, 0, 1, 1, 1, 1, 5, 1, -40, 15, 15, 0, 0, 0, 1, 1, 1, 1, 10, 1, 40, -15, 30, 0, 0, 0, 1, 1, 1, 1, 15, 1, 0, 0, 50, 0, 0, 0, 1, 1, 1, 1 )
+tracks/0/keys = PoolRealArray( 0, 1, 0, -50, 50, 0, 0, 0, 1, 1, 1, 1, 5, 1, -40, 15, 15, 0, 0, 0, 1, 1, 1, 1, 10, 1, 40, 0, 30, 0, 0, 0, 1, 1, 1, 1, 15, 1, 0, -50, 50, 0, 0, 0, 1, 1, 1, 1 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 3 )
@@ -222,7 +222,7 @@ mesh = SubResource( 8 )
 material/0 = SubResource( 14 )
 
 [node name="Particles" type="Particles" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6666, 16.6696, 16.8754 )
 amount = 64
 lifetime = 3.0
 visibility_aabb = AABB( 1024, 1024, 1024, 9999, 9999, 9999 )

@@ -8,6 +8,8 @@ func _input(event):
 		rotation_degrees = target
 		rotation_degrees.x = clamp(rotation_degrees.x, -80, 80)
 	if event is InputEventKey:
+		if event.scancode == KEY_ESCAPE and event.pressed:
+			get_tree().quit()
 		if event.scancode == KEY_LEFT and event.pressed:
 			translate_object_local(Vector3(-1,0,0))
 		if event.scancode == KEY_RIGHT and event.pressed:
