@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://plant.png" type="Texture" id=1]
+[ext_resource path="res://Plant.gd" type="Script" id=2]
+
+[node name="Plant" type="Sprite3D"]
+centered = false
+offset = Vector2( -50, 0 )
+shaded = true
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="AltAngle" type="Sprite3D" parent="."]
+unique_name_in_owner = true
+centered = false
+offset = Vector2( -50, 0 )
+axis = 0
+shaded = true
+texture = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="NextStartPos" type="Position3D" parent="."]
+unique_name_in_owner = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.983772, 0 )
